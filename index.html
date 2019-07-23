@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Document title</title>
+    <meta name="description" content="A short description">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header>
+      <!-- Site logo, replace with your own -->
+      <div>
+        <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
+      </div>
+
+      <!-- Navigation menu and toggle button (non-functional) -->
+      <nav>
+        <button type="button">
+          <i class="material-icons">menu</i>
+        </button>
+        <ul>
+          <li><a href="#">Category</a>
+            <ul>
+              <li><a href="#">Subcategory</a></li>
+              <li><a href="#">Subcategory</a></li>
+              <li><a href="#">Subcategory</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Category</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search for a product (non-functional) -->
+      <form>
+        <fieldset>
+          <label for="search">Search</label>
+          <input type="text" name="search" id="search">
+        </fieldset>
+        <button type="button"><i class="material-icons">search</i></button>
+      </form>
+
+      <!-- Additional nav links -->
+      <ul>
+        <li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+        <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+      </ul>
+    </header>
+
+    <main>
+      <header>
+        <h1>Sale: Category Name</h1>
+
+        <!-- Filtering product form -->
+        <form>
+          <h2>Filters</h2>
+          <fieldset>
+            <h3>Sort By</h3>
+            <select name="sort" id="sort">
+              <option value="price-high">Price, highest to lowest</option>
+              <option value="price-low">Price, lowest to highest</option>
+              <option value="newest">Newest releases</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <h3>Colour</h3>
+            <ul>
+              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
+              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
+              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
+              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
+              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Sizes</h3>
+            <ul>
+              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="black">XS</label></li>
+              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="black">S</label></li>
+              <li><input type="checkbox" name="size" value="md" id="md"> <label for="white">M</label></li>
+              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="red">L</label></li>
+              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="blue">XL</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <h3>Rating above</h3>
+            <ol>
+              <li>
+                <input type="radio" name="rating" value="4" id="above-4">
+                <label for="above-4">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="3" id="above-3">
+                <label for="above-3">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="2" id="above-2">
+                <label for="above-2">
+                  <i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="above-1">
+                <label for="above-1">
+                  <i class="material-icons">star</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+        </form>
+      </header>
+
+      <section>
+        <h2>Result</h2>
+
+        <!-- Product 1 -->
+        <article>
+          <div><img src="img/product.jpg" alt="Product Image"></div>
+          <h3>Product Name</h3>
+          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dl>
+            <dt>Colours</dt>
+            <dd><span>Red</span>, <span>Blue</span>, <span>White</span></dd>
+
+            <dt>Sizes</dt>
+            <dd><span>M</span>, <span>L</span>, <span>XL</span></dd>
+        
+            <dt>Rating</dt>
+            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          </dl>
+          <div>
+            <span><del>$50.00</del> <ins>$39.00</ins></span>
+            <button type="button"><i class="material-icons">favorite</i></button>
+          </div>
+          <div><a href="#">see more</a></div>
+        </article>
+
+        <!-- Product 2 -->
+        <article>
+          <div><img src="img/product.jpg" alt="Product Image"></div>
+          <h3>Product Name</h3>
+          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dl>
+            <dt>Colours</dt>
+            <dd><span>Red</span>, <span>Blue</span>, <span>White</span></dd>
+
+            <dt>Sizes</dt>
+            <dd><span>S</span>, <span>M</span>, <span>XL</span></dd>
+        
+            <dt>Rating</dt>
+            <dd>4.0 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_border</i></span></dd>
+          </dl>
+          <div>
+            <span>$45.00</span>
+            <button type="button"><i class="material-icons">favorite_border</i></button>
+          </div>
+          <div><a href="#">see more</a></div>
+        </article>
+
+        <!-- Product 3 -->
+        <article>
+          <div><img src="img/product.jpg" alt="Product Image"></div>
+          <h3>Product Name</h3>
+          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dl>
+            <dt>Colours</dt>
+            <dd><span>Red</span>, <span>Blue</span>, <span>White</span></dd>
+
+            <dt>Sizes</dt>
+            <dd><span>M</span>, <span>L</span>, <span>XL</span></dd>
+        
+            <dt>Rating</dt>
+            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          </dl>
+          <div>
+            <span><del>$50.00</del> <ins>$39.00</ins></span>
+            <button type="button"><i class="material-icons">favorite</i></button>
+          </div>
+          <div><a href="#">see more</a></div>
+        </article>
+  
+        <!-- Product 4 -->
+        <article>
+          <div><img src="img/product.jpg" alt="Product Image"></div>
+          <h3>Product Name</h3>
+          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dl>
+            <dt>Colours</dt>
+            <dd><span>Red</span>, <span>Blue</span>, <span>White</span></dd>
+
+            <dt>Sizes</dt>
+            <dd><span>M</span>, <span>L</span>, <span>XL</span></dd>
+        
+            <dt>Rating</dt>
+            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          </dl>
+          <div>
+            <span><del>$50.00</del> <ins>$39.00</ins></span>
+            <button type="button"><i class="material-icons">favorite</i></button>
+          </div>
+          <div><a href="#">see more</a></div>
+        </article>
+
+        <!-- Product 5 -->
+        <article>
+          <div><img src="img/product.jpg" alt="Product Image"></div>
+          <h3>Product Name</h3>
+          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dl>
+            <dt>Colours</dt>
+            <dd><span>Red</span>, <span>Blue</span>, <span>White</span></dd>
+
+            <dt>Sizes</dt>
+            <dd><span>M</span>, <span>L</span>, <span>XL</span></dd>
+        
+            <dt>Rating</dt>
+            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          </dl>
+          <div>
+            <span><del>$50.00</del> <ins>$39.00</ins></span>
+            <button type="button"><i class="material-icons">favorite</i></button>
+          </div>
+          <div><a href="#">see more</a></div>
+        </article>
+
+        <!-- Product 6 -->
+        <article>
+          <div><img src="img/product.jpg" alt="Product Image"></div>
+          <h3>Product Name</h3>
+          <p>Here is a short of this product that might entice a user to click and add it to their cart.</p>
+          <dl>
+            <dt>Colours</dt>
+            <dd><span>Red</span>, <span>Blue</span>, <span>White</span></dd>
+
+            <dt>Sizes</dt>
+            <dd><span>M</span>, <span>L</span>, <span>XL</span></dd>
+        
+            <dt>Rating</dt>
+            <dd>4.4 <span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star_half</i></span></dd>
+          </dl>
+          <div>
+            <span><del>$50.00</del> <ins>$39.00</ins></span>
+            <button type="button"><i class="material-icons">favorite</i></button>
+          </div>
+          <div><a href="#">see more</a></div>
+        </article>
+      </section>
+
+      <footer>
+        <h2>Pages</h2>
+        <p>1-6 of 28 products found</p>
+        <ol>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ol>
+      </footer>
+    </main>
+
+    <footer>
+      <p>&copy; Copyright, 1970.</p>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Policy</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><i class="material-icons">face</i> Facebook</a></li>
+        <li><a href="#"><i class="material-icons">camera_alt</i> Instagram</a></li>
+        <li><a href="#"><i class="material-icons">alternate_email</i> Twitter</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
